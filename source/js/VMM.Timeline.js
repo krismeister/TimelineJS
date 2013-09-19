@@ -280,7 +280,9 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 			
 			updateSize();
 			
-			slider.setSize(config.feature.width, config.feature.height);
+			var myHeaderHeight = 150;
+			
+			slider.setSize(config.feature.width, config.feature.height - myHeaderHeight);
 			timenav.setSize(config.width, config.height);
 			if (orientationChange()) {
 				setViewport();
